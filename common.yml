@@ -1,0 +1,5 @@
+- name: Check PID of existing Java process
+  shell: "ps -ef | grep [j]ava"
+  register: java_status
+
+  - debug: var=java_status.stdout

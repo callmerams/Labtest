@@ -1,0 +1,5 @@
+- hosts: instance_1
+  gather_facts: no
+
+  tasks:
+    - include: common.yml
